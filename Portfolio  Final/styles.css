@@ -6,7 +6,6 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-   
 
 }
 
@@ -147,7 +146,8 @@ span {
     border-radius: 0.5rem;
     font-size: 17px;
     font-weight: 500;
-    width: 40%;
+    width: 200px;
+    
     background: var(--second-color);
     color: var(--text-color);
     border: 1px solid var(--second-color);
@@ -192,8 +192,9 @@ span {
 
 .side-socials img{
     display: block;
-    width: 20px;
-    margin: 0 auto 40px;
+    width: 15px;
+    margin: 0 auto 50px;
+    margin-left: 5px;
     cursor: pointer;
 }
 
@@ -259,7 +260,7 @@ span {
     border-radius: 10px;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    cursor: pointer;
+    
 }
 
 .about-img :hover {
@@ -309,7 +310,7 @@ span {
     justify-content: center;
     align-items:center;
     text-align: center;
-    grid-gap: 1rem;
+    grid-gap: 0.5rem;
     padding: 1rem 80px;
     font-size: var(--p-font);
   }
@@ -318,6 +319,8 @@ span {
    padding: 1rem;
    color: #ddd;
    cursor: pointer;
+   
+   
   }
 .skill-box p{
     color: var(--text2-color);
@@ -332,6 +335,12 @@ span {
     transform: scale(1.20) translateY(-5px);
 }
 
+/* .skill-img .bar{
+    background: var(--text2-color);
+    display: block;
+    height: 2px;
+    border: #7f5af0;
+} */
 
 
   .skill-title{
@@ -408,6 +417,8 @@ margin-top: 0.5rem;
     
  }
 
+ 
+
 /* ------------------------Skills End-------------------------- */
 
 /* -------------------Services----------------------------*/
@@ -462,6 +473,7 @@ margin-top: 0.5rem;
     color: var(--text2-color);
     font-size: var(--p-font);
     line-height: 20px;
+    margin-bottom: 20px;
 }
 
 .box:hover {
@@ -496,7 +508,7 @@ margin-top: 0.5rem;
     background: #393e46;
     border-radius: 0.5rem;
     transition: all .40s ease;
-    height: 472px;
+    height: 500px;
 
 
 
@@ -510,6 +522,7 @@ margin-top: 0.5rem;
 
 }
 
+
 .row h3 {
     font-size: 16px;
     font-weight: 700;
@@ -520,12 +533,15 @@ margin-top: 0.5rem;
     font-size: 25px;
     font-weight: 500;
     letter-spacing: 1px;
+    
+
 
 }
 
 .row-icon i {
 
     font-size: 30px;
+    
 }
 
 .row-icon i:hover {
@@ -629,6 +645,7 @@ margin-top: 0.5rem;
 
 .contact-form form {
     position: relative;
+    margin-bottom: -50rem;
 
 }
 
@@ -661,8 +678,13 @@ form textarea {
     width: 190px;
     transition: all .40s ease;
     cursor: pointer;
+   
 
 
+}
+
+.contact-form form .submit{
+    margin-bottom: 30px;
 }
 
 .contact-list i {
@@ -673,7 +695,7 @@ form textarea {
 /* ------------------------ Contact End ---------------------- */
 
 /* ------------------------- Footer --------------------------- */
-.last-text p {
+/* .last-text p {
     text-align: center;
     padding: 15px;
     color: var(--text2-color);
@@ -682,7 +704,7 @@ form textarea {
     letter-spacing: 1px;
     margin-top: 150px;
     
-}
+} */
 
 /* -------------------------Footer End--------------------------- */
 
@@ -710,7 +732,7 @@ form textarea {
 
 .about-more-text h2 {
     font-size: var(--h2-font);
-    margin-top: -2rem;
+    margin-top: 2rem;
 
 }
 
@@ -726,10 +748,17 @@ form textarea {
 
 }
 
+.more-image{
+    margin-bottom: 10rem;
+   
+}
+
 .more-image img {
-    width: 100%;
+    width: 400px;
     height: 100%;
     border-radius: 10px;
+    
+    margin-bottom: 2rem;
 }
 
 /* ------------------------ About Page 2 end ---------------------- */
@@ -794,7 +823,8 @@ form textarea {
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 1px;
-    margin-top: 400px;
+    margin-top: 450px;
+    margin-bottom: 10px;
     
 }
 
@@ -870,7 +900,7 @@ form textarea {
     }
 
     .about-img :hover {
-        transform: scale(1.40) translateY(-5px);
+        transform: scale(1.02) translateY(-5px);
     }
 
     #contact {
@@ -904,7 +934,7 @@ form textarea {
 }
 
 /* --------------skills MQ--------------- */
-@media  (max-width: 990px) {
+@media screen and (max-width: 990px) {
     .container{
         grid-template-columns:repeat(2, 1fr);
         padding: 2rem 50px;
@@ -985,7 +1015,7 @@ form textarea {
     }
 
     .about-img :hover {
-        transform: scale(1.10) translateY(-5px);
+        transform: scale(1.02) translateY(-5px);
     }
 
     
@@ -1036,7 +1066,7 @@ form textarea {
 
 }
 /* -------------- Skills MQ ---------- */
-@media  (max-width: 650px) {
+@media screen and (max-width: 650px) {
     .container{
         grid-template-columns:1fr;
         padding: 2rem 50px;
@@ -1044,11 +1074,3 @@ form textarea {
     
 }
 /* --------------- Skills MQ ---------- */
-
-@media  (max-width: 400px) {
-    body{
-
-        display: grid;
-
-    }
-}
